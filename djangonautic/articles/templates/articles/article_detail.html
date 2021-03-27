@@ -1,0 +1,17 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+
+<div class="article-detail">
+    <div class="article">
+        <img src={{article.thumb.url}} />
+        <h2 class = "art_title">{{article.title}}</h2>
+        <div class = "inline-block">
+        <p class ="art_author">By: {{article.author}}</p>
+        <p class = "art_date">{{article.date}}</p>
+        </div>
+        <p class = "art_body">{{article.body}}</p>
+        
+    </div>
+</div>
+{% endblock %}
